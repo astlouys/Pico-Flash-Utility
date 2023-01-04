@@ -21,7 +21,7 @@ pico_enable_stdio_usb(Pico-Flash-Utility  1)
 
 # The firmware version for the Pico W is too large to fit into RAM memory space...
 # Regular Pico version does fit though, so build a Pico version (that will also run on the Pico W)...
-pico_set_binary_type(Pico-Flash-Utility blocked_ram)  # this instruction, for some reason, will put garbage all over flash memory space... do not use
+# pico_set_binary_type(Pico-Flash-Utility blocked_ram)  # this instruction, for some reason, will put garbage all over flash memory space... do not use
 
 # Create map/bin/hex file etc.
 pico_add_extra_outputs(Pico-Flash-Utility)
